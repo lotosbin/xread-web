@@ -12,7 +12,7 @@ import {getUser} from '../oauth'
 import config from '../config'
 // Create an http link:
 const httpLink = new HttpLink({
-    uri: process.env.REACT_APP_API_URL
+    uri: config.apiEndpoint
 });
 const authLink = setContext(async (_, {headers}) => {
     // get the authentication token from local storage if it exists
