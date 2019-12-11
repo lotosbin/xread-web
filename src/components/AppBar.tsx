@@ -37,10 +37,10 @@ const ButtonAppBar = () => {
                     <Typography variant="h6" color="inherit">{t('xRead')}</Typography>
                     <Toolbar className={styles.nav}>
                         <ButtonLink className={styles.nav_item} color="inherit" to={'/article'}>{t('Home')}</ButtonLink>
-                        <ButtonLink className={styles.nav_item} color="inherit" to={"/guess/box/inbox"}>{t('guess')}</ButtonLink>
-                        <ButtonLink className={styles.nav_item} color="inherit" to={"/topic"}>{t('topic')}</ButtonLink>
-                        <ButtonLink className={styles.nav_item} color="inherit" to={"/tag"}>{t('tag')}</ButtonLink>
-                        <ButtonLink className={styles.nav_item} color="inherit" to={"/feed"}>{t('feed')}</ButtonLink>
+                        <ButtonLink className={styles.nav_item} color="inherit" to={"/guess/box/inbox"}>{t('Guess')}</ButtonLink>
+                        <ButtonLink className={styles.nav_item} color="inherit" to={"/topic"}>{t('Topic')}</ButtonLink>
+                        <ButtonLink className={styles.nav_item} color="inherit" to={"/tag"}>{t('Tag')}</ButtonLink>
+                        <ButtonLink className={styles.nav_item} color="inherit" to={"/feed"}>{t('Feed')}</ButtonLink>
                         <ButtonLink className={styles.nav_item} color="inherit" to={"/series"}>{t('Series')}</ButtonLink>
                         <Button className={styles.nav_item} color="inherit" component={"a"} href="http://store.xread.yuanjingtech.com" target="_blank">{t('Store')}</Button>
                         <Button className={styles.nav_item} color="inherit" component={"a"} href="http://feathub.com/lotosbin/xread" target="_blank">{t('Advice')}</Button>
