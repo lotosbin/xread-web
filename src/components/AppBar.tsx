@@ -37,7 +37,7 @@ const ButtonAppBar = () => {
                     <Typography variant="h6" color="inherit">{t('xRead')}</Typography>
                     <Toolbar className={styles.nav}>
                         <ButtonLink className={styles.nav_item} color="inherit" to={'/article'}>{t('Home')}</ButtonLink>
-                        <ButtonLink className={styles.nav_item} color="inherit" to={"/guess/box/inbox"}>{t('Guess')}</ButtonLink>
+                        <ButtonLink className={styles.nav_item} color="inherit" to={"/guess/priority_1"}>{t('Guess')}</ButtonLink>
                         <ButtonLink className={styles.nav_item} color="inherit" to={"/topic"}>{t('Topic')}</ButtonLink>
                         <ButtonLink className={styles.nav_item} color="inherit" to={"/tag"}>{t('Tag')}</ButtonLink>
                         <ButtonLink className={styles.nav_item} color="inherit" to={"/feed"}>{t('Feed')}</ButtonLink>

@@ -5,6 +5,14 @@
     flex-direction: column;
     min-width: 0;
 }
+
+.toolbar {
+    flex: 1;
+    flex-direction: row;
+    min-width: 0;
+    justify-content: space-between;
+}
+
 .nav {
     display: flex;
     flex-direction: column;
