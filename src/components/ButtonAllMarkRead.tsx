@@ -15,7 +15,7 @@ let mutationMarkRead = gql`mutation markRead($id:String) {
 const ButtonAllMarkRead = ({ids = [], read}: { ids: Array<string>, read?: string }) => {
     const {t, ready} = useTranslation("", {useSuspense: false});
     const {query, variables} = useContext(QueryContext);
-    const markRead = useMutation(mutationMarkRead);
+    const markRead = useMutation<any>(mutationMarkRead);
     if (!ids.length) return null;
     return <Button onClick={() => {
         ids.forEach(id => markRead({

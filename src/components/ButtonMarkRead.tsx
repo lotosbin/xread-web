@@ -21,7 +21,7 @@ interface TProps {
 const ButtonMarkRead = ({id, read}: TProps) => {
     const {t, ready} = useTranslation("", {useSuspense: false});
     const {query, variables} = useContext(QueryContext);
-    const markRead = useMutation(mutationMarkRead);
+    const markRead = useMutation<any>(mutationMarkRead);
     return <Button onClick={() => markRead({
         variables: {id: id},
         optimisticResponse: {

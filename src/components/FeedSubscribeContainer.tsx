@@ -11,7 +11,7 @@ import {useTranslation} from "react-i18next";
 
 const FeedSubscribeContainer = ({location: {search}, history}: any) => {
     const {t} = useTranslation("", {useSuspense: false});
-    const [url, setUrl] = useState(query.parse(search).url);
+    const [url, setUrl] = useState(`${query.parse(search).url || ""}`);
     const [title, setTitle] = useState(query.parse(search).title || "");
 
     return <Mutation mutation={gql`mutation addFeed($link:String!,$title:String) {
@@ -21,7 +21,7 @@ const FeedSubscribeContainer = ({location: {search}, history}: any) => {
             title
         }
     }`}>
-        {(addFeed: (arg0: { variables: { link: string | string[] | undefined; title: string | string[]; }; }) => void, {data}: any) => (
+        {(addFeed: any, {data}: any) => (
             <div className={styles.container}>
                 <TextField margin="normal" variant="outlined" label={t("URL")} value={url} onChange={event => setUrl(event.target.value)}/>
                 <TextField margin="normal" variant="outlined" label={t("Title")} value={title} onChange={event => setTitle(event.target.value)}/>

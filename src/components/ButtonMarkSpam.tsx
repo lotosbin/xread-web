@@ -14,7 +14,7 @@ let mutationMarkSpam = gql`mutation markSpam($id:String) {
 `;
 const ButtonMarkSpam = ({id}: any) => {
     const {t, ready} = useTranslation("", {useSuspense: false});
-    const markSpam = useMutation(mutationMarkSpam);
+    const markSpam = useMutation<any>(mutationMarkSpam);
     const {query, variables} = useContext(QueryContext);
     return <Button onClick={() => markSpam({
         variables: {id: id},
