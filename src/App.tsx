@@ -35,7 +35,6 @@ const App = () => (
                             <Route path="/series" component={Series}/>
                             <Route path="/oauth/callback" component={Callback}/>
                         </div>
-                        <Advice/>
                     </div>
                 </div>
             </Router>
