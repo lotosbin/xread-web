@@ -11,8 +11,6 @@ import {useTranslation} from "react-i18next";
 import queryString from "query-string";
 import ReadFilters from "./components/ReadFilters";
 import ViewModeSwitch from "./components/ViewModeSwitch";
-import {ViewModeContext} from "./contexts";
-import GuessArticleListContainer from "./components/GuessArticleListContainer";
 
 const Home = ({location: {pathname, search}}: any) => {
     let {read = "all"} = queryString.parse(search);
